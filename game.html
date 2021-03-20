@@ -1,18 +1,23 @@
 <!DOCTYPE!html>
 <html>
 <head>
-	<title>My first proper HTML page</title>
+	<title>Гра "Вгадай літеру"</title>
 </head>
 
 <body>
-	<h1>Hello world!</h1>
-	<p>My first web page.</p>
+	<h1>Гра "Вгадай літеру"</h1>
+	<p>Написала Примаченко Оксана.</p>
 	<script>
+    alert('Гра "Вгадай літеру". Вгадуєш по одній літері щоб відкрити слово.');
+
 	var words = [
-	"javascript",
-	"monkey",
-	"amazing",
-	"pancake"
+	"неперевершений",
+	"кава",
+	"подорож",
+	"італія",
+	"борщ",
+	"піца",
+	"кулінарія"
 	];
 	var word = words[Math.floor(Math.random() * words.length)];
 	var answerArray = [];
@@ -50,6 +55,7 @@
 	
 	alert(answerArray.join(" "));
 	alert("Гарна робота! Відповідь: " + word);
+	alert("Для того щоб почати гру заново - перезагрузіть сторінку :)")
 	</script>
 </body>
 </html>
